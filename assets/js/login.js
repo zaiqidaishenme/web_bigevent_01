@@ -73,7 +73,7 @@ $(function(){
             data: $(this).serialize(),
             success: function(res){
                 // 判断
-                if(res.status != 0){
+                if(res.status !=  0){
                     return layer.msg(res.message);
                 }
                 // 提示信息 保存token 跳转页面
